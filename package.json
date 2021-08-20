@@ -1,0 +1,21 @@
+{
+  "name": "ficusjs-compiled-templates",
+  "version": "1.0.0",
+  "description": "Compile JSX tagged template literals with snowpack and babel",
+  "main": "index.js",
+  "scripts": {
+    "build": "snowpack build",
+    "start": "snowpack dev"
+  },
+  "author": "Matt Levy",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@snowpack/plugin-babel": "^2.1.7",
+    "ficusjs": "^3.8.0",
+    "@ficusjs/renderers": "^3.4.1",
+    "babel-plugin-htm": "^3.0.0",
+    "snowpack": "^3.8.6"
+  }
+}
