@@ -1,7 +1,5 @@
 {
     "plugins": [
-        ["htm", {
-            "import": "@ficusjs/renderers/jsx-dom"
-        }]
+        "htm"
     ]
 }

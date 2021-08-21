@@ -1,4 +1,5 @@
-import { createCustomElement } from 'ficusjs'
+import { h } from '@ficusjs/renderers/jsx-dom'
+import { createCustomElement } from 'ficusjs/custom-element'
 
 createCustomElement('hello-world', {
     render () {
