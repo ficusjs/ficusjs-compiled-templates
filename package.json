@@ -5,17 +5,21 @@
   "main": "index.js",
   "scripts": {
     "build": "snowpack build",
+    "postbuild": "rollup -i build/index.js -d dist -f es -p \"terser={mangle: { keep_fnames: true, toplevel: true, module: true }}\"",
     "start": "snowpack dev"
   },
   "author": "Matt Levy",
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.14.8",
-    "@babel/core": "^7.15.0",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
     "@snowpack/plugin-babel": "^2.1.7",
-    "ficusjs": "^3.8.0",
-    "@ficusjs/renderers": "^3.4.1",
+    "@ficusjs/renderers": "^5.0.0",
+    "ficusjs": "^4.0.0",
     "babel-plugin-htm": "^3.0.0",
-    "snowpack": "^3.8.6"
+    "rollup": "2.75.6",
+    "rollup-plugin-terser": "7.0.2",
+    "snowpack": "^3.8.8",
+    "terser": "^5.14.0"
   }
 }
